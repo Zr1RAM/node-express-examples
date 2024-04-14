@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <!-- Font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <div id="task-manager" class="form-control">
+      <form id="task-manager-form" class="task-form">
+        <h4>Task Manager</h4>
+        <input
+          type="text"
+          name="task"
+          id="create-task"
+          placeholder="e.g. wash dishes"
+          class="task-input"
+        />
+        <button type="submit" class="btn submit-btn">Submit</button>
+        <div class="form-alert"></div>
+      </form>
+    </div>
+    <section class="tasks-container">
+      <p class="loading-text">Loading...</p>
+      <div class="tasks"></div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/taskManager.js"></script>
+  </body>
+</html>
